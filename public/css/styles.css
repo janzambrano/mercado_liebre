@@ -144,6 +144,10 @@ article{
     margin: auto;
 }
 
+footer{
+    margin-top: 30px;
+}
+
 /* Mobile */
 @media (min-width: 361px) {
     .descripcion{
@@ -163,7 +167,7 @@ article{
     .descripcion, .nav-header{
         display: block;
     } 
-    
+
     .burger-menu{
         display: none;
     }
