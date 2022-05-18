@@ -1,3 +1,6 @@
+/* Pendientes
+- organizar css alfabéticamente */
+
 body{     
     width: 100%;  
     background-color: #ebebeb;  
@@ -5,12 +8,14 @@ body{
 
 main{
     width: 90%;
-    display: block;
     margin: auto;    
 }
 
 *{
     font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: ​0​px​;
+    box-sizing: ​border-box​;
 }
 
 header{
@@ -30,8 +35,9 @@ header{
 }
 
 .btn-busqueda{
-    font-size: 30px;
+    font-size: 12px;
     margin-left: 10px;
+    padding: 2px 2px;
 }
 
 .barra-busqueda{
@@ -41,9 +47,10 @@ header{
 }
 
 .barra-busqueda input{
-    font-size: 1em !important;
-    padding: 15px 0px 5px;
-    width: 400px;
+    font-size: 6px;
+    padding: 7px 0px 4px;
+    width: 90%;
+    margin: auto;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
     font-size: 2em !important;
@@ -69,6 +76,10 @@ header{
     text-align: center;
 }
 
+.nav-header{
+    display: none;
+} 
+
 .burger-menu{
     text-align: center;
     display: block;
@@ -80,13 +91,13 @@ header{
     color: #fff;
     text-align: center;
     font-size: 18px;
-    padding: 10px;
+    padding: 6.8px 8px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
 p{
-    font-size: 16px;
+    font-size: 12px;
 }
 
 article{
@@ -95,8 +106,9 @@ article{
 }
 
 .titulares{
-    font-size: 45px;
+    font-size: 24px;
     color: #656b6f;
+    margin: 20px 0px;
 }
 
 .img-product{
@@ -105,17 +117,24 @@ article{
 }
 
 .box-articulo{
-    border-top: 4px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
     padding: 15px;
     background-color: #ffffff;
     box-sizing: border-box;
 }
 
-.box-articulo .fa-truck{
-    color: #31b74d;
-    border: 1px solid #31b74d;
-    padding: 14px 12px;
-    border-radius: 50%;
+.box-articulo i{
+    display: ​block​;
+    font-size: ​16​px​;
+    padding: ​5​px​;
+    width: ​30​px​;
+    height: ​30​px​;
+    border: ​1​px​ ​solid​ ​#39b54a​;
+    background-color: ​#FFF​;
+    border-radius: ​50​%​;
+    position: ​absolute​;
+    right: ​20​px​;
+    top: ​-15​px​;
 }
 
 .precios{
@@ -128,6 +147,11 @@ article{
 }
 
 .descripcion{
+    font-size: 16px;
+    display: none;
+}
+
+.cl1 h3, .cl2 h3, .cl3 h3{
     font-size: 16px;
 }
 
@@ -143,6 +167,8 @@ article{
     font-size: 2em;
     display: block;
     margin: auto;
+    margin-bottom: 15px;
+
 }
 
 footer{
@@ -152,25 +178,21 @@ footer{
 /* Mobile */
 @media (min-width: 361px) {
     .descripcion{
-        display: none;
-    }  
-
-    .nav-header{
-        display: none;
-    }
+        display: block;
+    }     
 }
 /* Tablets */
 @media (min-width: 769px) {
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    
-    .descripcion, .nav-header{
+    .nav-header{
         display: block;
     } 
 
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
+
     .burger-menu{
-        display: none;
+        display: none !important;
     }
 }
 
