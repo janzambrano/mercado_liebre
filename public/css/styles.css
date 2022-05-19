@@ -3,33 +3,33 @@
 
 /* CSS General */
 main section article i{
+    background-color: #fff;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
     display: block;
     font-size: 16px;
-    padding: 5px;
-    border: 1px solid #39b54a;
-    background-color: #fff;
-    border-radius: 50%;
+    padding: 5px; 
+    padding: 12px 10px;
     position: absolute;
     right: 20px;
-    top: -15px; 
-    padding: 12px 10px;   
+    top: -15px;   
 }
 
-body{     
+body{  
+    background-color: #ebebeb;     
     width: 100%;  
-    background-color: #ebebeb;  
 }
 
 main{
-    width: 90%;
-    margin: auto;    
+    margin: auto;
+    width: 90%;    
 }
 
 *{
-    font-family: 'Roboto', sans-serif;
-    padding: 0px;
-    margin: 0px;
     box-sizing: border-box ;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 p{
@@ -44,19 +44,19 @@ header{
 /* CSS del contenido de la cabecera */
 
 .top-header{
+    align-self: center;
     display: flex;
     flex-direction: row;
-    width: 100%;
     flex-wrap: wrap;
-    align-self: center;
+    width: 100%;
 }
 
 .logo{
-    width: 45%;
-    padding: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
+    padding: 10px;
+    width: 45%;
 }
 
 .banner img{
@@ -69,18 +69,18 @@ header{
     padding: 2px 2px;
 }
 
-.barra-busqueda{    
-    width: 50%;
+.barra-busqueda{
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+    width: 50%;
 }
 
 .barra-busqueda input{
     font-size: 6px;
+    margin: auto;
     padding: 7px 0px 4px;
     width: 75%;
-    margin: auto;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
     font-size: 2em !important;
@@ -103,11 +103,11 @@ header{
 }
 
 .mensaje{
-    text-align: center;
-    width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .nav-header{
@@ -115,20 +115,20 @@ header{
 } 
 
 .burger-menu{
-    text-align: center;
     display: block;
     margin-top: 20px;
+    text-align: center;
 }
 
 
 .burger-menu i{
     background-color: #1259c3;
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-    padding: 6.8px 8px;
     border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
     margin-bottom: 20px;
+    padding: 6.8px 8px;
+    text-align: center;
 }
 
 /* CSS del contenido del body */
@@ -139,14 +139,14 @@ section{
 }
 
 article{
-    margin-bottom: 10px;
     display: block;
+    margin-bottom: 10px;
     width: 100%;
 }
 
 .titulares{
-    font-size: 24px;
     color: #656b6f;
+    font-size: 24px;
     margin: 20px 0px;
 }
 
@@ -156,10 +156,10 @@ article{
 }
 
 .box-articulo{
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
     background-color: #ffffff;
+    border-top: 1px solid #ebebeb;
     box-sizing: border-box;
+    padding: 15px;
     position: relative;
 }
 
@@ -168,13 +168,13 @@ article{
 }
 
 .descuento{
-    font-size: 16px;
     color: #31b74d;
+    font-size: 16px;
 }
 
 .descripcion{
-    font-size: 16px;
     display: none;
+    font-size: 16px;
 }
 
 
@@ -190,18 +190,18 @@ article{
 }
 
 .copyright, .cl1, .cl2, .cl3{
-    text-align: center;
-    margin-bottom: 45px;
     display: block;
+    margin-bottom: 45px;
+    text-align: center;
 }
 
 .cl1 i, .cl2 i, .cl3 i{
-    text-align: center;
     color: #1259c3;
-    font-size: 2em;
     display: block;
+    font-size: 2em;
     margin: auto;
     margin-bottom: 15px;
+    text-align: center;
 
 }
 
@@ -220,19 +220,19 @@ footer{
 /* Tablets */
 @media (min-width: 769px) {
     .nav-header{
+        align-self: center;
         display: flex;
         flex-direction: row;
-        width: 100%;
         flex-wrap: wrap;
-        align-self: center;
         padding: 10px;
+        width: 100%;
     }
 
     .nav-1, .nav-2{
-        width: 50%;
         display: flex;
         flex-direction: row;
         list-style: none;
+        width: 50%;
     }
 
     .nav-2{
@@ -244,20 +244,20 @@ footer{
     }
 
     .texto-footer{
+        align-self: center;
         display: flex;
         flex-direction: row;
-        width: 100%;
         flex-wrap: wrap;
-        align-self: center;
         padding: 10px;
+        width: 100%;
     }
 
     .cl1, .cl2, .cl3{
-        width: 33.333%;
         display: flex;
         flex-direction: column;
         list-style: none;
         padding: 0px 30px;
+        width: 33.333%;
     }
 
     article{
@@ -271,21 +271,21 @@ footer{
     section{
         display: flex;
         flex-direction: row;
-        width: 100%;
         flex-wrap: wrap;
+        width: 100%;
     }    
     
-    article{        
+    article{
+        margin: 10px;        
         width: 47%;
-        margin: 10px;
     }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-    article{        
+    article{
+        margin: 10px;        
         width: 22.19%;
-        margin: 10px;
     }
 
     .logo{
