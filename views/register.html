@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/js/script.js"></script>
 </head>
 
 <body class="body-fomrs">
@@ -41,7 +42,7 @@
             <i class="fas fa-bars"></i>
         </div>
     </header> 
-    <form  class="box-form" action="/" method="POST">
+    <form class="box-form" name="form" action="/" onsubmit="return validate();" method="POST">
         <p>        
             <label class="form-label-hide" for="nombre">Nombre y apellido</label>   
             <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" minlength="4" required>
@@ -54,7 +55,7 @@
         
         <p>
             <label class="form-label-hide" for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="E-mail" pattern=".+@globex\.com" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
         </p>
 
         <p>
@@ -96,7 +97,7 @@
         <p>
             <label class="form-label-hide" for="contrasena">Confirmar contraseña</label>
             <input type="password" name="contrasena2" id="contrasena2" placeholder="Confirmar contraseña" minlength="6" required>
-        </p>
+        </p>        
 
         <p>
             <input class="btn-form" id="borrar" type="reset" name="borrar" value="Borrar"> <input class="btn-form" id="enviar" type="submit" name="enviar" value="Enviar">
