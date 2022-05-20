@@ -1,6 +1,3 @@
-/* Pendientes
-- organizar css alfabéticamente */
-
 /* CSS General */
 main section article i{
     background-color: #fff;
@@ -44,17 +41,13 @@ header{
 /* CSS del contenido de la cabecera */
 
 .top-header{
-    align-self: center;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
 
 .logo{
-    align-items: center;
     display: flex;
-    justify-content: center;
     padding: 10px;
     width: 45%;
 }
@@ -72,34 +65,30 @@ header{
 .barra-busqueda{
     align-items: center;
     display: flex;
-    justify-content: center;    
     width: 50%;
 }
 
 .barra-busqueda input{
-    font-size: 6px;
+    font-size: 12px;
     margin: auto;
-    padding: 7px 0px 4px;
+    padding: 2px 0px 2px;
     width: 75%;
 }
-::-webkit-input-placeholder { /* WebKit browsers */
-    font-size: 2em !important;
-    vertical-align: middle;
+
+::-webkit-input-placeholder { /*WebKit browsers*/ 
+    color: #000;
 }
   
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    font-size: 2em !important;
-    vertical-align: middle;
+:-moz-placeholder { /*Mozilla Firefox 4 to 18*/
+    color: #000;
 }
   
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    font-size: 2em !important;
-    vertical-align: middle;
+::-moz-placeholder { /*Mozilla Firefox 19+*/
+    color: #000;
 }
   
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    font-size: 2em !important;
-    vertical-align: middle;
+:-ms-input-placeholder { /*Internet Explorer 10+*/
+    color: #000;
 }
 
 .mensaje{
@@ -209,6 +198,66 @@ footer{
     margin-top: 30px;
 }
 
+/* CSS de formularios de registro y login*/
+
+.body-fomrs{
+    
+}
+
+.box-form{
+    margin: 0 auto;
+    padding: 50px 0px;
+    width: 90%;
+}
+
+.form-label-hide{
+    display: none;
+}
+
+.form-label{
+    display: block;
+    font-size: 18px;
+}
+
+.box-form input{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 8px;
+}
+
+.form-radio input{
+    margin-left: 8px;
+    position: relative;
+    top: 2px;
+}
+
+.form-checkbox input{
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.btn-form{
+    background-color: #1259c3;
+    color: #fff;
+}
+
+.box-form #nombre, .box-form #username, .box-form #email, .box-form #date, .box-form #domicilio, .box-form #foto, .box-form #contrasena1, .box-form #contrasena2{
+    width: 100%;
+}
+
+.box-form #enviar, .box-form #borrar{
+    width: 49%;
+}
+
+.box-form .btn-form2{
+    background-color: #1259c3;
+    color: #fff;
+    width: 100% !important;
+}
+
+
 
 /* CSS para adaptación en los distintos dispositivos */
 /* Mobile */
@@ -244,17 +293,12 @@ footer{
     }
 
     .texto-footer{
-        align-self: center;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         padding: 10px;
         width: 100%;
     }
 
-    .cl1, .cl2, .cl3{
-        display: flex;
-        flex-direction: column;
+    .cl1, .cl2, .cl3{        
         list-style: none;
         padding: 0px 30px;
         width: 33.333%;
@@ -270,7 +314,6 @@ footer{
 
     section{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
     }    
