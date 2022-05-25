@@ -178,6 +178,18 @@ article{
     width: 50%;
 }
 
+.box-articulo .fa-truck{
+    color: #31b74d;
+}
+
+.box-articulo .fa-truck:hover{
+    animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
+
 
 /* CSS del contenido del pie de pagina */
 
@@ -208,6 +220,10 @@ article{
 
 footer{
     margin-top: 30px;
+}
+
+.cl1 i:hover, .cl2 i:hover, .cl3 i:hover{
+    color: #EAC926;
 }
 
 /* CSS de formularios de registro y login*/
@@ -269,6 +285,10 @@ footer{
     width: 100% !important;
 }
 
+.box-form .btn-form2:hover{ background-color: 
+    #0022AA;
+}
+
 
 
 /* CSS para adaptación en los distintos dispositivos */
@@ -276,7 +296,12 @@ footer{
 @media (min-width: 361px) {
     .descripcion{
         display: block;
-    }     
+        color: #fff;
+    }  
+    
+    article:hover .descripcion {
+        color: #000;
+    }
 }
 /* Tablets */
 @media (min-width: 769px) {
@@ -316,7 +341,7 @@ footer{
         width: 33.333%;
     }
 
-    article{
+    article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }    
 
