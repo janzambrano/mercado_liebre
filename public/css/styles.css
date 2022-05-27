@@ -136,7 +136,7 @@ article{
 .titulares{
     color: #656b6f;
     font-size: 24px;
-    margin: 20px 0px;
+    margin: 20px 10px;
 }
 
 .img-product{
@@ -295,8 +295,8 @@ footer{
 /* Mobile */
 @media (min-width: 361px) {
     .descripcion{
-        display: block;
         color: #fff;
+        display: block;
     }  
     
     article:hover .descripcion {
@@ -365,7 +365,7 @@ footer{
 @media (min-width: 1024px) {
     article{
         margin: 10px;        
-        width: 22.19%;
+        width: 23.53%;
     }
 
     .logo{
