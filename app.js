@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const port = process.env.POST || 3000; // esto es para conectar con Heroku
+const port = process.env.PORT || 3000; // esto es para conectar con Heroku
 
 app.listen(port, () => console.log('Levantando un servidor con Express') 
 ) ; 
